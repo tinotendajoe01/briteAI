@@ -2,7 +2,7 @@
 
 Built with the Next.js 13.5 App Router, tRPC, TypeScript, Prisma & Tailwind
 
-![Project Image](https://github.com/tinotendajoe01/briteAI/blob/master/public/thumbnail.png)
+![Project Image](https://github.com/tinotendajoe01/briteAI/blob/main/public/thumbnail.png)
 
 ## Features
 
