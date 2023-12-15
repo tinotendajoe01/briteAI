@@ -37,7 +37,7 @@ const ChatInput = ({ isDisabled }: ChatInputProps) => {
                   }
                 }}
                 placeholder="Message BriteAI..."
-                className="resize-none pr-12 text-base py-3 scrollbar-thumb-green scrollbar-thumb-rounded scrollbar-track-green-lighter scrollbar-w-2 scrolling-touch"
+                className="resize-none pr-12  text-base py-3 scrollbar-thumb-green scrollbar-thumb-rounded scrollbar-track-green-lighter scrollbar-w-2 scrolling-touch"
               />
 
               <Button

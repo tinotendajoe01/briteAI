@@ -8,16 +8,16 @@ export default function Home() {
   return (
     <>
       <MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
-        <div className="flex flex-col items-center justify-center rounded-md bg-white shadow-2xl ring-1 ring-gray-900/10 ">
+        {/* <div className="flex flex-col items-center justify-center rounded-md bg-white shadow-2xl ring-1 ring-gray-900/10 ">
           <Image
             src="/logos/logo-green-bg-copy.png"
             alt="product preview"
             width={100}
             height={100}
             quality={100}
-            className="animatespin"
+            className="animate-spin"
           />
-        </div>
+        </div> */}
         <h1 className="max-w-4xl text-4xl font-bold md:text-6xl lg:text-7xl">
           Converse, Transform, Personalize: <br />
           Your <span className="text-green-600">Medical</span> Data.
@@ -59,7 +59,7 @@ export default function Home() {
               <div className="mt-16 flow-root sm:mt-24">
                 <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
                   <Image
-                    src="/dashboard-preview.jpg"
+                    src="/dashboard-preview.png"
                     alt="product preview"
                     width={1364}
                     height={866}

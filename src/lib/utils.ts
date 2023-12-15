@@ -45,7 +45,7 @@ export function constructMetadata({
       creator: "@tinoendajoe01",
     },
     icons,
-    metadataBase: new URL("https://quill-jet.vercel.app"),
+    metadataBase: new URL("https://briteai.vercel.app/"),
     themeColor: "#FFF",
     ...(noIndex && {
       robots: {
