@@ -1,12 +1,11 @@
-# Quill - A Modern Fullstack SaaS-Platform
+# BriteAI - A Modern Fullstack AI Document Reader
 
 Built with the Next.js 13.5 App Router, tRPC, TypeScript, Prisma & Tailwind
 
-![Project Image](https://github.com/joschan21/quill/blob/master/public/thumbnail.png)
+![Project Image](https://github.com/tinotendajoe01/briteAI/blob/master/public/thumbnail.png)
 
 ## Features
 
-- 🛠️ Complete SaaS Built From Scratch
 - 💻 Beautiful Landing Page & Pricing Page Included
 - 💳 Free & Pro Plan Using Stripe
 - 📄 A Beautiful And Highly Functional PDF Viewer
@@ -29,15 +28,10 @@ Built with the Next.js 13.5 App Router, tRPC, TypeScript, Prisma & Tailwind
 To get started with this project, run
 
 ```bash
-  git clone https://github.com/joschan21/quill.git
+  git clone https://github.com/tinotendajoe01/briteAI
 ```
 
 and copy the .env.example variables into a separate .env file, fill them out & and that's all you need to get started!
-
-
-## Acknowledgements
-
-- [Kinde Auth](https://link.joshtriedcoding.com/kinde) for making this project possible
 
 ## License
 
