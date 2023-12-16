@@ -67,9 +67,9 @@ const UploadDropzone = ({ isSubscribed }: { isSubscribed: boolean }) => {
         }
 
         const [fileResponse] = res;
-        console.log("🛑 res", res);
-        const key = fileResponse?.key;
 
+        const key = fileResponse?.key;
+        console.log("🛑 key exist", key);
         if (!key) {
           return toast({
             title: "Something went wrong",
