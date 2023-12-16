@@ -46,7 +46,7 @@ const onUploadComplete = async ({
       key: file.key,
     },
   });
-
+  console.log("🛑 file exist", isFileExist);
   if (isFileExist) return;
 
   const createdFile = await db.file.create({
@@ -58,12 +58,13 @@ const onUploadComplete = async ({
       uploadStatus: "PROCESSING",
     },
   });
-
+  console.log("🛑  created file", createdFile);
   try {
     const response = await fetch(
       `https://uploadthing-prod.s3.us-west-2.amazonaws.com/${file.key}`
     );
 
+    console.log("🛑 response", response);
     const blob = await response.blob();
 
     const loader = new PDFLoader(blob);
