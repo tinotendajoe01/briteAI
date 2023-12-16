@@ -67,7 +67,7 @@ const UploadDropzone = ({ isSubscribed }: { isSubscribed: boolean }) => {
         }
 
         const [fileResponse] = res;
-
+        console.log("🛑 res", res);
         const key = fileResponse?.key;
 
         if (!key) {
