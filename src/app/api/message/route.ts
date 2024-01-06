@@ -7,6 +7,12 @@ import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
 import { NextRequest } from "next/server";
 import { OpenAIStream, StreamingTextResponse } from "ai";
+type Message = {
+  role: "user" | "assistant";
+  content: string;
+};
+
+type DocumentContext = string[];
 
 export const POST = async (req: NextRequest) => {
   const body = await req.json();
@@ -70,7 +76,11 @@ export const POST = async (req: NextRequest) => {
   return new StreamingTextResponse(stream);
 };
 
-function createDynamicPrompt(message, prevMessages, documentContext) {
+function createDynamicPrompt(
+  message: string,
+  prevMessages: Message[],
+  documentContext: DocumentContext
+): string {
   let prompt = "Answer the user's question in markdown format.\n\n";
   if (documentContext.includes("business data")) {
     prompt += "Focus on analyzing the business data.\n\n";
@@ -86,7 +96,11 @@ function createDynamicPrompt(message, prevMessages, documentContext) {
   return prompt;
 }
 
-async function processAIResponse(aiResponse, fileId, userId) {
+async function processAIResponse(
+  aiResponse: string,
+  fileId: string,
+  userId: string
+): Promise<void> {
   if (aiResponse.includes("Clarification needed:")) {
     const clarificationQuestion = aiResponse
       .split("Clarification needed:")[1]
