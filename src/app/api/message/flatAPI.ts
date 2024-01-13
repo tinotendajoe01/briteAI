@@ -9,7 +9,11 @@ import { NextRequest } from "next/server";
 
 import { OpenAIStream, StreamingTextResponse } from "ai";
 
-function createDynamicPrompt(message, prevMessages, documentContext) {
+function createDynamicPrompt(
+  message: any,
+  prevMessages: any,
+  documentContext: any
+) {
   let prompt = "Answer the user's question in markdown format.\n\n";
 
   // Contextual Flexibility: Adapt prompt based on the document context
@@ -22,7 +26,7 @@ function createDynamicPrompt(message, prevMessages, documentContext) {
 
   // Previous Conversation
   prompt += "Previous Conversation:\n";
-  prevMessages.forEach((msg) => {
+  prevMessages.forEach((msg: any) => {
     prompt += `${msg.role === "user" ? "User:" : "Assistant:"} ${
       msg.content
     }\n`;
