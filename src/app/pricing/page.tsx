@@ -51,11 +51,11 @@ const Page = () => {
       quota: PLANS.find((p) => p.slug === "pro")!.quota,
       features: [
         {
-          text: "50 pages per PDF",
+          text: "1000 pages per PDF",
           footnote: "The maximum amount of pages per PDF-file.",
         },
         {
-          text: "30MB file size limit",
+          text: "1BG file size limit",
           footnote: "The maximum file size of a single PDF file.",
         },
         {
